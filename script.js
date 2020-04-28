@@ -236,7 +236,7 @@ function test1(){
     //console.log(S);
     if(S < 0){
        test();
-       dataEntry.innerHTML += '<p style="text-align: center;color:red;">Невозможно рассчитать показатель для ориентированного графа</br>расчет произведен по неориентированному</p>'
+       dataEntry.innerHTML += '<p style="text-align: center;color:red;">Невозможно рассчитать показатель для ориентированного графа</br>расчет произведен по неориентированному</p></br>'+ `<p style="color:red;">${R}</p>`;
     }
     else{
     dataEntry.innerHTML = '<p>Структурная избытычность</p>' + `<p style="color:red;">${R}</p>` + '</br>' + '<p>Неравномерность распределения связей</p>' + `<p style="color:red;">${S}</p>`;
